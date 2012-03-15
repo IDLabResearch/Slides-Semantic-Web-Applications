@@ -1,0 +1,46 @@
+.deck-container {
+  background: #fff;
+  width: 90%;
+}
+.deck-container .slide {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 30pt;
+  max-height: 768px;
+  overflow: hidden;
+}
+.deck-container .slide h1 {
+  position: static;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  margin-top: 1em;
+  font-size: 2em;
+}
+.deck-container .slide h2 {
+  border-bottom: none;
+  position: static;
+  font-size: 1.3em;
+}
+.deck-container .slide h3 {
+  font-size: 1em;
+  margin-bottom: 0em;
+}
+.deck-container .slide p {
+  margin-bottom: .2em;
+}
+.deck-container .slide ul {
+  list-style: none;
+}
+
+p.authors {
+  text-align: center;
+  margin: 1.5em 0 0;
+}
+
+p.affiliation {
+  text-align: center;
+}
