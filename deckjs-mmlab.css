@@ -35,12 +35,29 @@
 .deck-container .slide ul {
   list-style: none;
 }
+.deck-container .slide li {
+  padding: 0;
+  margin: .25em 0;
+}
+.deck-container .slide li ul,
+.deck-container .slide li ol {
+  font-size: 90%;
+}
 
-p.authors {
+.deck-container a {
+  color: inherit;
+  text-decoration: none;
+}
+.deck-container a:hover {
+  color: #4386E6;
+  text-decoration: underline;
+}
+
+.deck-container p.authors {
   text-align: center;
   margin: 1.5em 0 0;
 }
 
-p.affiliation {
+.deck-container p.affiliation {
   text-align: center;
 }
