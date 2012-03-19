@@ -7,7 +7,8 @@
   background: #fff;
   color: #000;
   font-size: 30pt;
-  max-height: 768px;
+  min-height: 0;
+  height: 768px;
   overflow: hidden;
 }
 .deck-container .slide h1 {
@@ -27,7 +28,7 @@
 }
 .deck-container .slide h3 {
   font-size: 1em;
-  margin-bottom: 0em;
+  margin: .5em 0 0;
 }
 .deck-container .slide p {
   margin-bottom: .2em;
@@ -51,6 +52,10 @@
 .deck-container a:hover {
   color: #4386E6;
   text-decoration: underline;
+}
+
+.deck-container .small {
+  font-size: 80%;
 }
 
 .deck-container p.authors {
