@@ -58,6 +58,10 @@
   font-size: 80%;
 }
 
+.deck-container .right {
+  float: right;
+}
+
 .deck-container p.authors {
   text-align: center;
   margin: 1.5em 0 0;
