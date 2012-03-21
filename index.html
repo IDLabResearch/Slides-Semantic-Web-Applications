@@ -264,6 +264,6 @@
 <script src="deck.js/core/deck.core.js"></script>
 <script src="deck.js/extensions/hash/deck.hash.js"></script>
 <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
-<script>$(function(){$.deck('.slide');});</script>
+<script>$(function(){$.deck($('.slide').wrapInner('<div class="bounding">'));});</script>
 </body>
 </html>

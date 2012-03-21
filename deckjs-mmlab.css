@@ -7,9 +7,13 @@
   background: #fff;
   color: #000;
   font-size: 30pt;
-  min-height: 0;
-  height: 768px; /* most projectors offer only a 1024x768 resolution */
+}
+.deck-container .slide .bounding {
+  /* most projectors offer only a 1024x768 resolution */
+  width: 1024px;
+  height: 768px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .deck-container .slide h1 {
   position: static;
