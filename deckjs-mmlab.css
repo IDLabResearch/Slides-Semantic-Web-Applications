@@ -50,6 +50,25 @@
   font-size: 90%;
 }
 
+.deck-container .slide ul.inline > li {
+  float: left;
+}
+.deck-container .slide ul.inline > li:before {
+  content: "—";
+}
+.deck-container .slide ul.inline > li:first-child:before {
+  content: "";
+}
+.deck-container .slide ul.inline:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	margin-bottom: -.5em;
+}
+
 .deck-container a {
   text-decoration: none;
   border-bottom: 1px dotted;
