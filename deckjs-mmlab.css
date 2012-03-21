@@ -8,12 +8,18 @@
   color: #000;
   font-size: 30pt;
 }
-.deck-container .slide .bounding {
+.deck-container .slide > .outer {
+  width: 100%;
+  margin: 0 auto;
+}
+.deck-container .slide > .outer > .inner {
   /* most projectors offer only a 1024x768 resolution */
-  width: 1024px;
+  /* width = 1024px minus two 48px paddings */
+  width: 928px;
   height: 768px;
   overflow: hidden;
-  margin: 0 auto;
+  /* enable absolutely positioned elements inside slide */
+  position: relative;
 }
 .deck-container .slide h1 {
   position: static;
@@ -23,6 +29,7 @@
   -o-transform: none;
   transform: none;
   margin: .3em 0;
+  padding: 0;
   font-size: 2em;
 }
 .deck-container .slide h2 {
