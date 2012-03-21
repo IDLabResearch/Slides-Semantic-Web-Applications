@@ -24,9 +24,18 @@
 
 <section class="slide" id="title">
 	<h1>Applications make the Semantic Web happen</h1>
-  <img src="figures/semantic-web-logo.svg" width="300" height="300" alt="[Semantic Web logo]">
-	<p class="authors">Ruben Verborgh, Davy Van Deursen, Peter Lambert</p>
-	<p class="affiliation">Multimedia Lab – IBBT / ELIS, Ghent University</p>
+  <img src="figures/semantic-web-logo.svg" width="250" height="250" alt="[Semantic Web logo]">
+  <p class="authors">
+    <a href="mailto:ruben.verborgh@ugent.be">Ruben Verborgh</a>,
+    <a href="mailto:davy.vandeursen@ugent.be">Davy Van Deursen</a>,
+    <a href="mailto:peter.lambert@ugent.be">Peter Lambert</a>
+  </p>
+  <p class="affiliation"><a href="http://multimedialab.elis.ugent.be/" target="_blank">Multimedia Lab – IBBT / ELIS, Ghent University</a></p>
+  <p class="tiny right">
+    <a href="http://mmlab.github.com/Slides-Semantic-Web-Applications/" target="_blank">Watch on GitHub pages</a>.
+    <br>
+    <a href="https://github.com/mmlab/Slides-Semantic-Web-Applications" target="_blank">Fork on GitHub</a>.
+  </p>
 </section>
 
 <section class="slide" id="overview">
@@ -45,6 +54,7 @@
 			<p>Google and Facebook use semantics, too.</p>
 		</li>
 	</ul>
+  <img src="figures/semantic-web-logo.svg" width="200" height="200" alt="[Semantic Web logo]" class="background">
 </section>
 
 <section class="slide" id="mashups">
@@ -117,8 +127,30 @@
 	    <h3>How would you ask Google…</h3>
 	    <ul>
 	      <li>
+	        <a href="https://www.google.com/search?q=movies%20by%20Peter%20Jackson" target="_blank">
+	        …movies by Peter Jackson?
+	        </a>
+	      </li>
+	      <li>
+	        <a href="https://www.google.com/search?q=movies%20by%20Peter%20Jackson%20featuring%20Orlando%20Bloom" target="_blank">
+	        …featuring Orlando Bloom?
+	        </a>
+	      </li>
+	      <li>
+	        <a href="https://www.google.com/search?q=movies%20by%20Peter%20Jackson%20featuring%20Orlando%20Bloom%20with%20release%20date" target="_blank">
+	        …with release date?
+	        </a>
+	      </li>
+	    </ul>
+	  </li>
+	</ul>
+	<ul>
+	  <li>
+	    <h3>How can we ask Freebase…</h3>
+	    <ul>
+	      <li>
 	        <a href="http://www.freebase.com/queryeditor/?q=%5B%7B%22id%22%3Anull%2C%22name%22%3Anull%2C%22%2Ffilm%2Ffilm%2Fdirected_by%22%3A%7B%22name%22%3A%22Peter%20Jackson%22%7D%7D%5D&amp;autorun=1" target="_blank">
-	        …movies directed by Peter Jackson?
+	        …movies by Peter Jackson?
 	        </a>
 	      </li>
 	      <li>
@@ -134,9 +166,7 @@
 	    </ul>
 	  </li>
 	</ul>
-	<figure class="right">
-	  <img src="figures/peter-jackson.jpg" />
-	</figure>
+	<img src="figures/peter-jackson.jpg" width="250" class="background" />
 </section>
 
 <section class="slide" id="linked-data">
@@ -174,19 +204,19 @@
 </section>
 
 <section class="slide" id="schema.org">
-	<h2>Search engines launched <a href="http://schema.org/" target="_blank">schema.org</a></h2>
+	<h2>Search engines launch <a href="http://schema.org/" target="_blank">schema.org</a></h2>
 	<ul>
 		<li>
 		  <h3>Who?</h3>
-		  <p>A joint effort by Google, Bing (Microsoft), and Yahoo!</p>
+		  <p>A joint effort by Google, Bing, and Yahoo!</p>
 		</li>
 		<li>
 		  <h3>What?</h3>
-		  <p>A schema that describes what webpages are about</p>
+		  <p>A schema describing what webpages are about</p>
 		</li>
 		<li>
 		  <h3>Why?</h3>
-		  <p>Allows you to express the <em>meaning</em> of your content</p>
+		  <p>To express the <em>meaning</em> of your content</p>
 		</li>
 		<li>
 		  <h3>How?</h3>
@@ -196,32 +226,29 @@
 </section>
 
 <section class="slide" id="schema.org-search-results">
-	<h2>Schema.org enhances Web search results</h2>
-	<figure class="right">
-		<a href="https://www.google.be/search?aq=f&amp;ix=seb&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=quick+pot+roast+recipe" target="_blank">
-			<img  src="figures/snippets1.png" width="450" alt="Google Rich Snippets example"/>
-		</a>
-	</figure>
+	<h2>Schema.org enhances search results</h2>
+  <p class="clear"><em>with varying degrees of intelligence</em></p>
 	<ul>
 		<li><h3><a href="http://developer.yahoo.com/searchmonkey/siteowner.html" target="_blank">Yahoo! SearchMonkey</a></h3></li>
 		<li><h3><a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=99170" target="_blank">Google Rich Snippets</a></h3></li>
 		<li><h3><a href="http://searchenginewatch.com/article/2049973/Bing-Adds-Tiles-to-Search-Results" target="_blank">Bing Tiles</a></h3></li>
 	</ul>
+  <img  src="figures/snippets1.png" width="400" alt="Google Rich Snippets example" class="background" />
 </section>
 
 <section class="slide" id="schema.org-domain-specific">
 	<h2>Schema.org powers search engines</h2>
-  <p class="right">(<em>mostly domain-specific</em>)</p>
-  <ul>
-    <li><h3><a href="http://www.google.com/landing/recipes/" target="_blank">recipe search</a></h3></li>
-    <li><h3><a href="http://www.google.com/shopping" target="_blank">product search</a></h3></li>
-    <li><h3><a href="http://video.search.yahoo.com/" target="_blank">video search</a></h3></li>
-  </ul>
-	<figure>
+  <p class="clear"><em>currently mostly domain-specific</em></p>
+	<figure class="right">
     <a href="https://www.google.com/#q=macaroni&amp;tbm=rcp" target="_blank">
-      <img  src="figures/google-recipes.png" alt="Google Recipes example"/>
+      <img  src="figures/google-recipes.png" width="600" alt="Google Recipes example"/>
     </a>
   </figure>
+  <ul>
+    <li><h3><a href="http://www.google.com/landing/recipes/" target="_blank">recipes</a></h3></li>
+    <li><h3><a href="http://www.google.com/shopping" target="_blank">products</a></h3></li>
+    <li><h3><a href="http://video.search.yahoo.com/" target="_blank">video</a></h3></li>
+  </ul>
 </section>
 
 <section class="slide" id="evolving-search">
@@ -251,10 +278,32 @@
     	      <li><em>&hellip;</em></li>
     	    </ul>
     	  </li>
-    	  <li><h4>provides <strong>answers</strong> in addition to pages</h4></li>
+        <li><h4>provides <strong>answers</strong> and pages</h4></li>
   	  </ul>
 	  </li>
 	</ul>
+  <img src="figures/google-singhal.jpg" class="background" height="320">
+</section>
+
+<section class="slide" id="build-your-own">
+  <h2>Build your Semantic Web app today</h2>
+  <ul>
+    <li>
+      <h3>Start with mashups</h3>
+      <ul>
+        <li><a href="http://www.freebase.com/apps/" target="_blank">Freebase apps</a></li>
+      </ul>
+    </li>
+    <li>
+      <h3>Create real-world apps</h3>
+      <ul>
+        <li><a href="https://github.com/antoniogarrote/rdfstore-js" target="_blank">JavaScript</a> (browser <em>and</em> node.js)</li>
+        <li><a href="http://incubator.apache.org/jena/tutorials/rdf_api.html" target="_blank">Java</a></li>
+        <li><a href="http://semanticweb.org/wiki/Getting_data_from_the_Semantic_Web_(Ruby)" target="_blank">Ruby</a></li>
+      </ul>
+    </li>
+  </ul>
+  <img class="background" src="figures/apps.jpg" width="400">
 </section>
 
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
@@ -267,6 +316,6 @@
 <script src="deck.js/core/deck.core.js"></script>
 <script src="deck.js/extensions/hash/deck.hash.js"></script>
 <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
-<script>$(function(){$.deck('.slide');});</script>
+<script>$(function(){$.deck($('.slide').wrapInner('<div class="outer"><div class="inner">'));});</script>
 </body>
 </html>
