@@ -109,6 +109,13 @@
   margin: 0 0 1em;
 }
 
+.deck-container .background {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: -500;
+}
+
 abbr {
   text-transform: lowercase;
   font-variant: small-caps !important;
