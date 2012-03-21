@@ -18,7 +18,7 @@
   -ms-transform: none;
   -o-transform: none;
   transform: none;
-  margin-top: 1em;
+  margin: 1em 0 .3em;
   font-size: 2em;
 }
 .deck-container .slide h2 {
@@ -62,7 +62,7 @@
 .deck-container .slide ul.inline:after {
 	content: ".";
 	display: block;
-	clear: both;
+	clear: left;
 	visibility: hidden;
 	line-height: 0;
 	height: 0;
@@ -96,7 +96,7 @@
 
 .deck-container p.authors {
   text-align: center;
-  margin: 1.5em 0 0;
+  margin: 1em 0 0;
 }
 
 .deck-container p.affiliation {
